@@ -1,0 +1,17 @@
+.ui.container {
+    overflow: auto;
+    white-space: nowrap;
+}
+.ui.card {
+    display: inline-block;
+}
+
+.ui.card,
+.ui.cards>.card {
+    background-color: #F4F3EA;
+}
+
+
+
+
+

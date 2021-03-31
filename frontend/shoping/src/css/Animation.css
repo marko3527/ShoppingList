@@ -1,0 +1,72 @@
+.fade-enter{
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave-active {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-appear {
+    opacity: 0;
+}
+
+.fade-appear-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.addItem-enter{
+    transform: translateX(-100%);
+}
+
+.addItem-enter-active {
+    animation: slide-in 500ms ease-in forwards;
+}
+
+.addItem-leave {
+    transform: translateX(0%);
+}
+
+.addItem-leave-active {
+    animation: slide-out 500ms ease-out forwards;
+}
+
+.addItem-appear {
+    transform: translateX(-100%);
+}
+
+.addItem-appear-active {
+    animation: slide-in 500ms ease-in forwards;
+}
+
+@keyframes slide-in {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    from{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(1000%);
+    }
+}
